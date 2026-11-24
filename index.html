@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f2fc">
+  <meta name="description" content="SafeSpace helps teens recognize, prevent and respond to cyberbullying.">
+  <title>SafeSpace — Your online world deserves a safe space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="home" aria-label="SafeSpace home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></span>
+        <span><strong>SafeSpace</strong><small>YOUR ONLINE WORLD, SAFER.</small></span>
+      </a>
+      <div class="nav-label">MENU</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span>⌂</span> Home</button>
+        <button class="nav-item" data-page="report"><span>＋</span> Report Cyberbullying</button>
+        <button class="nav-item" data-page="protect"><span>◇</span> Block &amp; Protect</button>
+        <button class="nav-item" data-page="support"><span>♡</span> Emotional Support</button>
+        <button class="nav-item" data-page="learn"><span>▤</span> Learn &amp; Prevent</button>
+        <button class="nav-item" data-page="reports"><span>▣</span> My Reports <span class="nav-count" id="reportCount">0</span></button>
+        <button class="nav-item" data-page="assistant"><span>✧</span> SafeSpace Assistant</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-icon">✦</span><strong>You deserve respect.</strong><p>Your feelings matter, online and offline.</p></div>
+        <button class="nav-item" data-page="about"><span>ⓘ</span> About SafeSpace</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>SafeSpace</span><b>/</b><strong id="pageCrumb">Home</strong></div>
+        <div class="top-actions">
+          <span class="privacy-chip"><span></span> Private demo</span>
+          <button class="avatar" id="profileButton" aria-label="Open profile settings">S</button>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="page active" id="page-home">
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="eyebrow">A KINDER DIGITAL WORLD STARTS HERE</span>
+              <h1>Your online world<br><em>deserves a safe space.</em></h1>
+              <p>Recognize cyberbullying, find helpful steps and remember that you never have to face a difficult online situation alone.</p>
+              <div class="hero-actions"><button class="btn btn-primary" data-page="learn">Explore &amp; learn <span>→</span></button><button class="btn btn-light" data-page="assistant">Talk to the assistant</button></div>
+            </div>
+            <div class="hero-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card"><div class="art-shield"><svg viewBox="0 0 120 130"><path d="M60 7 105 24v34c0 29-19 51-45 64C34 109 15 87 15 58V24L60 7Z" fill="#fff" stroke="#9c7bc8" stroke-width="4"/><path d="M60 83S34 68 34 50c0-14 18-19 26-5 8-14 26-9 26 5 0 18-26 33-26 33Z" fill="#d77da9"/></svg></div><span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="art-caption">Kindness looks good on everyone.</span></div></div>
+          </div>
+          <div class="welcome-row"><div><span class="eyebrow">YOUR SAFE SPACE TOOLKIT</span><h2>How can we help today?</h2><p class="muted">Choose a space to explore. You can come back here anytime.</p></div><span class="tiny-flower">✿</span></div>
+          <div class="feature-grid">
+            <button class="feature-card lavender" data-page="report"><span class="feature-icon">＋</span><strong>Report a situation</strong><p>Record what happened and keep a note for yourself.</p><span class="card-link">Start a report →</span></button>
+            <button class="feature-card pink" data-page="protect"><span class="feature-icon">◇</span><strong>Protect your space</strong><p>Learn how to block, report and adjust privacy settings.</p><span class="card-link">Explore safety tips →</span></button>
+            <button class="feature-card peach" data-page="support"><span class="feature-icon">♡</span><strong>Find support</strong><p>Gentle reminders and ideas for getting support.</p><span class="card-link">Take a moment →</span></button>
+            <button class="feature-card blue" data-page="assistant"><span class="feature-icon">✧</span><strong>Talk to your assistant</strong><p>Explore helpful options in a friendly guided chat.</p><span class="card-link">Start chatting →</span></button>
+          </div>
+          <div class="bottom-banner"><div><span class="eyebrow">A REMINDER</span><h3>Being kind online is always in style.</h3><p>You can make a difference by choosing respect, speaking up safely and supporting others.</p></div><span class="banner-heart">♡</span></div>
+        </section>
+
+        <section class="page" id="page-report">
+          <div class="section-visual"><img src="assets/report_illustration.png" alt="Illustration representing reporting harmful online behavior"></div>
+          <div class="page-heading"><span class="eyebrow">YOU CAN WRITE IT DOWN</span><h1>Report Cyberbullying</h1><p>Use this private, on-device form to organize what happened. This demo does not send reports to a school, platform or support team.</p></div>
+          <div class="notice"><strong>Before you begin</strong><p>If you feel unsafe or overwhelmed, consider speaking with a trusted adult. If someone is in immediate danger, contact local emergency services with an adult's help.</p></div>
+          <form class="panel form-panel" id="reportForm">
+            <div class="panel-title"><div><span class="eyebrow">NEW RECORD</span><h2>Tell us what happened</h2></div><span class="step-pill">Private demo record</span></div>
+            <div class="form-grid">
+              <label>Type of situation<select id="reportType" required><option value="">Choose a category</option><option>Repeated hurtful messages</option><option>Insults or humiliating comments</option><option>Rumors or embarrassing posts</option><option>Exclusion from an online group</option><option>Impersonation or fake account</option><option>Sharing content without permission</option><option>Threatening or intimidating messages</option><option>Something else</option></select></label>
+              <label>Where did it happen?<select id="reportPlatform" required><option value="">Choose a platform</option><option>Instagram</option><option>TikTok</option><option>WhatsApp</option><option>Snapchat</option><option>Discord</option><option>Online game</option><option>Other / prefer not to say</option></select></label>
+              <label class="full">When did it happen? <span class="optional">(approximate)</span><input type="date" id="reportDate"></label>
+              <label class="full">Describe what happened<textarea id="reportDescription" rows="5" maxlength="1200" placeholder="Write only what you feel comfortable recording. Avoid including passwords, addresses or other private information." required></textarea><small class="field-hint"><span id="charCount">0</span>/1200 characters</small></label>
+              <label class="full">Add screenshots (optional)<input type="file" id="reportFiles" accept="image/*" multiple><small class="field-hint">For this demo, small image files are saved in this browser only. Avoid uploading sensitive images.</small><div class="file-list" id="fileList"></div></label>
+              <label class="full checkbox-label"><input type="checkbox" id="reportConfirm" required><span>I understand this is a local demo record, not an official report or emergency service.</span></label>
+            </div>
+            <div class="form-actions"><button type="reset" class="btn btn-light" id="clearReport">Clear form</button><button type="submit" class="btn btn-primary">Save report <span>→</span></button></div>
+            <p class="form-feedback" id="reportFeedback" role="status"></p>
+          </form>
+        </section>
+
+        <section class="page" id="page-protect">
+          <div class="section-visual"><img src="assets/block_illustration.png" alt="Shield and lock illustration"></div>
+          <div class="page-heading"><span class="eyebrow">TAKE BACK CONTROL</span><h1>Block &amp; Protect</h1><p>Small privacy steps can help you feel more in control of your online spaces.</p></div>
+          <div class="notice"><strong>Remember</strong><p>Platform menus change over time. Look for the platform's current Help or Safety settings, and ask a trusted adult to help if you are unsure.</p></div>
+          <div class="guide-grid">
+            <article class="guide-card"><span class="guide-icon">⛔</span><h3>Block an account</h3><p>Blocking can limit how an account contacts or interacts with you.</p><ol><li>Open the person's profile.</li><li>Choose the menu (often shown as three dots).</li><li>Select <b>Block</b> and follow the confirmation steps.</li></ol><button class="text-button copy-tip" data-copy="Open the profile → menu (three dots) → Block → confirm.">Copy quick steps ↗</button></article>
+            <article class="guide-card"><span class="guide-icon">⚑</span><h3>Report harmful content</h3><p>Use the platform's report option when a post, message or account breaks its rules.</p><ol><li>Find the specific content or account.</li><li>Open its options menu.</li><li>Choose <b>Report</b> and select the closest reason.</li></ol><button class="text-button copy-tip" data-copy="Find the content → options menu → Report → choose the closest reason.">Copy quick steps ↗</button></article>
+            <article class="guide-card"><span class="guide-icon">🔒</span><h3>Review your privacy</h3><p>Choose settings that make you comfortable sharing online.</p><ol><li>Review who can see your posts.</li><li>Limit who can message or tag you.</li><li>Check location and contact syncing settings.</li></ol><button class="text-button copy-tip" data-copy="Review post visibility, message permissions, tagging and location settings.">Copy quick steps ↗</button></article>
+            <article class="guide-card"><span class="guide-icon">🧾</span><h3>Keep a record safely</h3><p>If it is safe to do so, keep a note of dates and relevant details.</p><ol><li>Do not reply to hurtful messages.</li><li>Save relevant evidence without sharing it around.</li><li>Show it to a trusted adult when asking for help.</li></ol><button class="text-button copy-tip" data-copy="Do not engage. Keep relevant details safely and show a trusted adult.">Copy quick steps ↗</button></article>
+          </div>
+          <div class="bottom-banner"><div><span class="eyebrow">YOU ARE NOT ALONE</span><h3>You don't have to handle this by yourself.</h3><p>A trusted adult can help you decide what to do next.</p></div><button class="btn btn-primary" data-page="support">Find support →</button></div>
+        </section>
+
+        <section class="page" id="page-support">
+          <div class="section-visual"><img src="assets/support_illustration.png" alt="Heart illustration for emotional support"></div>
+          <div class="page-heading"><span class="eyebrow">A LITTLE SPACE TO BREATHE</span><h1>Emotional Support</h1><p>Your feelings are valid. Take what helps, leave what doesn't, and reach out to someone you trust.</p></div>
+          <div class="quote-card"><span class="quote-mark">“</span><p id="supportQuote">You deserve kindness, online and everywhere else.</p><span class="quote-credit">A SafeSpace reminder</span><button class="btn btn-light" id="newQuote">Show me another reminder ↻</button></div>
+          <div class="support-grid">
+            <article class="support-card"><span class="feature-icon">🌿</span><h3>Take a gentle pause</h3><p>Step away from the screen for a moment. Take a few comfortable, slow breaths and notice what is around you.</p></article>
+            <article class="support-card"><span class="feature-icon">💬</span><h3>Talk to someone you trust</h3><p>You could start with: “Something online has been bothering me. Can I talk to you about it?”</p></article>
+            <article class="support-card"><span class="feature-icon">🧡</span><h3>Remember what is true</h3><p>Someone else's hurtful words do not define your worth. You deserve respect and support.</p></article>
+          </div>
+          <div class="notice notice-warm"><strong>Need more support?</strong><p>Consider speaking with a parent or caregiver, teacher, school counselor or another trusted adult. If you feel in immediate danger, seek help from an adult and local emergency services.</p><button class="text-button" data-page="assistant">Explore support options with the assistant →</button></div>
+        </section>
+
+        <section class="page" id="page-learn">
+          <div class="section-visual"><img src="assets/learn_illustration.png" alt="Books and lightbulb illustration for learning"></div>
+          <div class="page-heading"><span class="eyebrow">KNOW IT. NOTICE IT. PREVENT IT.</span><h1>Learn &amp; Prevent</h1><p>Understanding cyberbullying can help you recognize it and choose a safer response.</p></div>
+          <div class="learn-intro"><div><h2>What is cyberbullying?</h2><p>Cyberbullying is bullying that happens through digital devices and online spaces. It can include repeated hurtful messages, humiliating posts, spreading rumors or deliberately excluding someone.</p></div><span class="learn-symbol">✧</span></div>
+          <h2 class="section-heading">Explore the essentials</h2>
+          <div class="learn-grid">
+            <article class="learn-card"><span>01</span><h3>Recognize the signs</h3><p>Notice patterns such as repeated insults, unwanted messages, public humiliation or threats.</p></article>
+            <article class="learn-card"><span>02</span><h3>Pause before posting</h3><p>Think about whether a message is respectful, necessary and okay to share. Ask permission before posting someone else's content.</p></article>
+            <article class="learn-card"><span>03</span><h3>Be an upstander safely</h3><p>Do not join in, like or forward harmful content. Check in privately with the person and tell a trusted adult.</p></article>
+            <article class="learn-card"><span>04</span><h3>Know when to get help</h3><p>If behavior continues, feels threatening or is difficult to manage, ask a trusted adult for support.</p></article>
+          </div>
+          <div class="quiz-panel panel">
+            <div class="panel-title"><div><span class="eyebrow">QUICK KNOWLEDGE CHECK</span><h2>What would you do?</h2></div><span class="quiz-progress" id="quizProgress">Question 1 of 4</span></div>
+            <div id="quizArea"><h3 id="quizQuestion"></h3><div class="quiz-options" id="quizOptions"></div><p id="quizFeedback" class="quiz-feedback" role="status"></p><button class="btn btn-primary" id="quizNext" disabled>Next question →</button></div>
+            <div id="quizResult" class="quiz-result hidden"><h3>Nice work exploring these situations!</h3><p id="quizScore"></p><button class="btn btn-primary" id="quizAgain">Try again ↻</button></div>
+          </div>
+        </section>
+
+        <section class="page" id="page-reports">
+          <div class="section-visual"><img src="assets/reports_illustration.png" alt="Folder illustration for saved reports"></div>
+          <div class="page-heading heading-row"><div><span class="eyebrow">YOUR SAVED RECORDS</span><h1>My Reports</h1><p>These records are stored only in this browser on this device.</p></div><button class="btn btn-primary" data-page="report">＋ New report</button></div>
+          <div class="reports-toolbar"><label class="search-box"><span>⌕</span><input type="search" id="reportSearch" placeholder="Search your reports..." aria-label="Search reports"></label><select id="reportFilter" aria-label="Filter reports"><option value="all">All reports</option><option value="recent">Newest first</option><option value="oldest">Oldest first</option></select></div>
+          <div id="reportsList" class="reports-list"></div>
+          <div class="notice notice-warm"><strong>Your privacy matters</strong><p>Anyone with access to this browser profile may be able to see locally saved records. Do not use real names or sensitive personal details in this school demo.</p><button class="text-button" id="deleteAllReports">Delete all local demo reports</button></div>
+        </section>
+
+        <section class="page" id="page-assistant">
+          <div class="section-visual assistant-visual"><img src="assets/assistant_illustration.png" alt="Friendly assistant robot illustration"></div>
+          <div class="page-heading"><span class="eyebrow">A FRIENDLY GUIDED CHAT</span><h1>SafeSpace Assistant</h1><p>A programmed support guide with helpful options. It is not a real AI, counselor or emergency service.</p></div>
+          <div class="chat-layout">
+            <div class="chat-main panel">
+              <div class="chat-header"><div class="assistant-avatar">✧</div><div><strong id="assistantDisplayName">Your assistant</strong><small><span class="online-dot"></span> Ready to help you explore options</small></div><button class="icon-button chat-reset" id="resetChat" title="Restart conversation" aria-label="Restart conversation">↻</button></div>
+              <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+              <div class="chat-choices" id="chatChoices"></div>
+              <form class="chat-input-row" id="chatForm"><input id="chatInput" type="text" maxlength="240" placeholder="Choose an option above or type a topic..." aria-label="Type a message"><button class="send-button" type="submit" aria-label="Send message">➤</button></form>
+              <p class="chat-disclaimer">This assistant uses pre-written responses. It cannot understand every message or provide emergency help. Please involve a trusted adult for real-life support.</p>
+            </div>
+            <aside class="chat-side"><div class="side-tip"><span>♡</span><h3>A gentle reminder</h3><p>You can share only what feels comfortable. You do not need to include names, usernames or private details.</p></div><div class="side-tip lilac-tip"><span>✦</span><h3>Need a fresh start?</h3><p>You can restart the conversation whenever you want.</p><button class="text-button" id="sideReset">Restart chat ↻</button></div></aside>
+          </div>
+        </section>
+
+        <section class="page" id="page-about">
+          <div class="page-heading"><span class="eyebrow">ABOUT THIS PROJECT</span><h1>About SafeSpace</h1><p>Your online world deserves a safe space.</p></div>
+          <div class="about-panel panel"><div class="about-logo">♡</div><h2>A safer, kinder digital community.</h2><p>SafeSpace is a student project designed to help teenagers recognize, prevent and respond to cyberbullying. It brings together practical safety tips, educational content, personal reflection and a programmed support assistant.</p><div class="about-points"><div><strong>01</strong><span>Recognize harmful online behavior.</span></div><div><strong>02</strong><span>Learn practical ways to protect your space.</span></div><div><strong>03</strong><span>Encourage empathy, respect and support.</span></div></div><div class="notice"><strong>Important project limitation</strong><p>SafeSpace is an educational demonstration. It does not send reports, contact platforms, provide professional counseling or replace trusted adults and official support services.</p></div></div>
+        </section>
+      </div>
+      <footer class="footer"><span>© 2026 SafeSpace · A student project</span><span>Made with care <b>♡</b></span></footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close icon-button" id="modalClose" aria-label="Close dialog">×</button><span class="eyebrow">REPORT DETAILS</span><h2 id="modalTitle">Saved report</h2><div id="modalBody"></div><div class="modal-actions"><button class="btn btn-light" id="modalDelete">Delete report</button><button class="btn btn-primary" id="modalDone">Done</button></div></div>
+  </div>
+  <div class="modal-backdrop hidden" id="nameModalBackdrop">
+    <div class="modal panel name-modal" role="dialog" aria-modal="true" aria-labelledby="nameModalTitle"><div class="assistant-avatar large">✧</div><span class="eyebrow">MAKE THIS CHAT YOURS</span><h2 id="nameModalTitle">What would you like to call your assistant?</h2><p>Choose a friendly name. You can change it any time by restarting the chat.</p><form id="nameForm"><input id="assistantNameInput" maxlength="24" placeholder="For example, Sunny" required><div class="modal-actions"><button class="btn btn-light" type="button" id="skipName">Use SafeSpace Assistant</button><button class="btn btn-primary" type="submit">Let's go →</button></div></form></div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
